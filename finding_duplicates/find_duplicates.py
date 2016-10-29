@@ -9,6 +9,7 @@ import sys
 f_names = dict()
 dupies = set()
 
+
 def walk_files(search_path):
     for path, subdirs, files in os.walk(search_path):
         for name in files:
@@ -21,9 +22,11 @@ def walk_files(search_path):
                 f_names.setdefault(md5, [])
                 f_names[md5].append(filename)
 
+
 def print_dupies():
     for value in dupies:
-       print f_names.get(value)
+        print f_names.get(value)
+
 
 def main():
     walk_files(sys.argv[1])
