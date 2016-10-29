@@ -1,0 +1,6 @@
+[web]
+host10 ansible_ssh_host=192.168.33.110 
+host20 ansible_ssh_host=192.168.33.120
+
+[haproxy]
+host30 ansible_ssh_host=192.168.33.130

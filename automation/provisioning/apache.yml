@@ -1,0 +1,11 @@
+- hosts: ["host10", "host20"]
+  tasks:
+    - name: Installs apache web server
+      apt: pkg=apache2 state=installed update_cache=true
+    - name: Esnure apache is running
+      service: name=apache2 state=running enabled=yes
+    - name: copy to doc root
+      template: src=templates/index.html.j2 dest=/var/www/html/index.html
+  handlers:
+    - name: restart apache
+      service: name=apache2 state=restarted
