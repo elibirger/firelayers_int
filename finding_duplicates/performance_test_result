@@ -1,0 +1,11 @@
+ebirgermac:finding_duplicates ebirger$ time python find_duplicates_v2.py /Users/ebirger/Documents/
+
+real    0m8.614s
+user    0m1.906s
+sys     0m1.767s
+ebirgermac:finding_duplicates ebirger$ time python find_duplicates.py /Users/ebirger/Documents/
+
+real    0m17.469s
+user    0m6.111s
+sys     0m3.652s
+ebirgermac:finding_duplicates ebirger$
