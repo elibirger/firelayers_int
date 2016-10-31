@@ -21,8 +21,7 @@ def walk_files(search_path, depth):
     print os.path.basename(search_path)
     for i in so:
         intend = i.count(os.path.sep) - search_path.count(os.path.sep)
-        root_level = intend - 1
-        print '|' + root_level * '  |' + separator + ' ' + os.path.basename(i)
+        print intend * '  ' + u"\u2514" + separator + os.path.basename(i)
 
 
 def main():
