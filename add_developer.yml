@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: Create user on remote machine
+      user: name="{{ user }}" shell=/bin/bash groups=root append=yes
+      sudo: yes
+
+    - name: Add user's key
+      authorized_key: user="{{ user }}" key="{{ lookup('file', [path] ) }}" state=present
+      sudo: yes
