@@ -18,10 +18,11 @@ def walk_files(search_path, depth):
 
     so = sorted(files)
     separator = '--'
+    up = u"\u2514"
     print os.path.basename(search_path)
     for i in so:
         intend = i.count(os.path.sep) - search_path.count(os.path.sep)
-        print intend * '  ' + u"\u2514" + separator + os.path.basename(i)
+        print intend * '  ' + up.encode('utf-8') + separator + os.path.basename(i)
 
 
 def main():
