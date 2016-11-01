@@ -19,4 +19,4 @@ find duplicated files effectively
 tree command in Python
 
 #####
-get all instances tags from AWS EC2 using boto ec2
+Query - get all instances tags from AWS S3 using boto ec2
