@@ -1,0 +1,5 @@
+- hosts: ["host40"]
+  tasks:
+    - name: Installs munin server
+      apt: pkg=munin-node state=installed update_cache=true
+

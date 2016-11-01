@@ -1,0 +1,5 @@
+add/remove developer usage:
+
+ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory add_developer.yml --extra-vars "user=USERNAME path=PATH_TO_id_rsa.pub"
+
+ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory remove_developer.yml --extra-vars "user=USERNAME path=PATH_TO_id_rsa.pub"
